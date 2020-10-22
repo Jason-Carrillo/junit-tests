@@ -19,5 +19,8 @@ public class Student {
 
     }
 
+    public void addGrade(int grade){
+
+    }
 
 }

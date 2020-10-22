@@ -23,4 +23,12 @@ public class Student {
 
     }
 
+    public ArrayList<Integer> getGrades(){
+
+    }
+
+    public double getGradeAverage(){
+
+    }
+
 }

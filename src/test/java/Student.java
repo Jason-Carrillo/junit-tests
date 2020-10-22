@@ -11,4 +11,9 @@ public class Student {
         this.grades = new ArrayList<>();
     }
 
+    public long getId(){
+
+    }
+
+
 }

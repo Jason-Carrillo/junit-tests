@@ -16,7 +16,7 @@ public class Student {
     }
 
     public String getName(){
-
+        return this.name;
     }
 
     public void addGrade(int grade){

@@ -21,7 +21,6 @@ public class StudentTest {
         assertTrue(Jason.getGrades().isEmpty());
         Jason.addGrade(90);
         assertFalse(Jason.getGrades().isEmpty());
-        assertNotNull(Jason.getGrades());
     }
 
     @Test

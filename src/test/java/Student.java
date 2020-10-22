@@ -5,7 +5,11 @@ public class Student {
     private String name;
     private ArrayList<Integer> grades;
 
-    public void Student(long studentID, String studentName){
+    public Student(){
+
+    }
+
+    public Student(String studentName, long studentID){
         this.id = studentID;
         this.name = studentName;
         this.grades = new ArrayList<>();

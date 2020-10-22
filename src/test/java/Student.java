@@ -28,7 +28,15 @@ public class Student {
     }
 
     public double getGradeAverage(){
+        double totalGrade = 0;
 
+        for (Integer number: grades){
+            totalGrade += number;
+        }
+
+        double totalAverage = totalGrade / grades.size();
+
+        return Math.round(totalAverage * 100)/100.0;
     }
 
 }

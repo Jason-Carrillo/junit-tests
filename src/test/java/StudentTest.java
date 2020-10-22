@@ -18,8 +18,9 @@ public class StudentTest {
 
     @Test
     public void testAddGrade(){
+        assertTrue(Jason.getGrades().isEmpty());
         Jason.addGrade(90);
-        System.out.println(Jason.getGrades());
+        assertFalse(Jason.getGrades().isEmpty());
         assertNotNull(Jason.getGrades());
     }
 

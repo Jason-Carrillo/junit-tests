@@ -11,6 +11,25 @@ public class StudentTest {
     @Test
     public void testStudentConst(){
         assertEquals(Jason.getName(), "Jason");
+        assertEquals(Jason.getId(), 12345);
+        assertNotEquals(Jason.getId(), 12354);
+        assertTrue(Jason.getName().length() > 0);
+    }
+
+    @Test
+    public void testAddGrade(){
+        Jason.addGrade(90);
+        System.out.println(Jason.getGrades());
+        assertNotNull(Jason.getGrades());
+    }
+
+    @Test
+    public void testAverageGrade(){
+        Jason.addGrade(90);
+        Jason.addGrade(100);
+        Jason.addGrade(100);
+
+        assertEquals(Jason.getGradeAverage(), 96.67, 0);
 
     }
 
